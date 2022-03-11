@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+   /* box-sizing est appliqué à tous les éléments */
+   }
+
+   
+#blocPage
+{
+    width: 992 px;
+    
+}
+body
+{
+font-family: 'Raleway','Times New Roman', Times, serif;
+margin-left: 40px;
+margin-right: 40px;
+
+
+}
+header
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+}
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    
+    
+    
+    
+    
+}
+nav li
+{
+    display: flex;
+    margin: 40px;
+    
+}
+nav a 
+{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+   /* Tablettes*/
+@media screen and (min-width: 780px) and (max-width: 979px)
+{
+
+    
+}
+
+/* Pour les portables*/
+@media screen and (max-width: 1024px) 
+{
+    
+   
+}
