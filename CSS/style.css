@@ -2,53 +2,54 @@
     box-sizing: border-box;
    /* box-sizing est appliqué à tous les éléments */
    }
-
-   
-#blocPage
+html body
 {
-    width: 992 px;
-    
-}
-body
-{
-font-family: 'Raleway','Times New Roman', Times, serif;
-margin-left: 40px;
-margin-right: 40px;
-
-
+    font-family: 'raleway','serif';
 }
 header
 {
-display: flex;
-justify-content: space-between;
-align-items: center;
-
-
-}
-nav ul
-{
-    list-style-type: none;
+    height: 120px;
+    
     display: flex;
-    
-    
-    
-    
+    justify-content: space-between;
+    align-content:flex-end;
     
 }
-nav li
+#logoBooki
 {
+   
     display: flex;
-    margin: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 65px;
+}
+
+nav
+{
+    
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    
     
 }
-nav a 
+nav a
 {
+    margin: 30px;
+
+    padding-top:  48px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-decoration: none;
     color: black;
+    
 }
-
-
-
+ nav a:hover 
+ {
+     border-top: 2px solid rgb(0, 101, 252);
+     color: rgb(0, 101, 252);
+ }
 
 
 
@@ -66,6 +67,25 @@ nav a
 /* Pour les portables*/
 @media screen and (max-width: 1024px) 
 {
-    
-   
+    header
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #logoBooki
+    {
+        display: flex;
+        justify-content: center;
+    }
+   nav
+   {
+        display: flex;
+        justify-content: space-between;
+   }
+   nav a:hover 
+ {
+     border-top: none;
+     border-bottom: 2px solid rgb(0, 101, 252);
+     color: rgb(0, 101, 252);
+ }
 }
