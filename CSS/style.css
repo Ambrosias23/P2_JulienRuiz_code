@@ -64,8 +64,8 @@ nav a
 
  #blocPage
 {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 49px;
+    margin-right: 49px;
 }
 
 #barreDeRecherche
@@ -100,6 +100,10 @@ nav a
     font-weight: 600;
     color: black;
 }
+#champDeRecherche::placeholder
+{
+    color: black;
+}
 
 #boutonRechercher 
 {
@@ -114,13 +118,14 @@ nav a
     color: white;
     border-radius: 0% 15px 15px 0%;
     font-size: 18px;
+    border: 1px solid rgb(0, 101, 252);
     position: relative;
     left: -4px; 
 }
+
 #boutonLoupe
 {
     display: none;
-    
 }
 
                     /* Filtres */
@@ -128,96 +133,561 @@ nav a
 {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    font-size: 18px;
-    font-weight: 600;
-}
-.economique
-{
-display: flex;
-align-items: center;
-margin-left: 27px;
-margin-right: 27px;
-border: 2px solid rgb(242, 242, 242);
-border-radius: 20px 20px 20px 20px;
-}
-.economique i
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-width: 50px;
-height: 50px;
-background-color: #DEEBFF;
-border-radius: 20px 20px 20px 20px;
-color: rgb(0, 101, 252);
-
-}
-.familial
-{
-    display: flex;
-    align-items: center;
-    margin-left: 27px;
-    margin-right: 27px;
-    border: 2px solid rgb(242, 242, 242);
-    border-radius: 20px 20px 20px 20px;
-}
-.familial i
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-width: 50px;
-height: 50px;
-background-color: #DEEBFF;
-border-radius: 20px 20px 20px 20px;
-color: rgb(0, 101, 252);
-}
-.romantique
-{
-    display: flex;
-    align-items: center;
-    margin-left: 27px;
-    margin-right: 27px;
-    border: 2px solid rgb(242, 242, 242);
-    border-radius: 20px 20px 20px 20px;
-}
-.romantique i
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-width: 50px;
-height: 50px;
-background-color: #DEEBFF;
-border-radius: 20px 20px 20px 20px;
-color: rgb(0, 101, 252);
-}
-.animaux
-{
-    display: flex;
-    align-items: center;
-    margin-left: 27px;
-    margin-right: 27px;
-    border: 2px solid rgb(242, 242, 242);
-    border-radius: 20px 20px 20px 20px;
-}
-.animaux i
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-width: 50px;
-height: 50px;
-background-color: #DEEBFF;
-border-radius: 20px 20px 20px 20px;
-color: rgb(0, 101, 252);
-}
-/* Tablettes*/
-@media screen and (min-width: 780px) and (max-width: 979px)
-{
-
     
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 13px;
+}
+
+#filtres p
+{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 10px;
+    border: 2px solid rgb(242, 242, 242);
+    border-radius: 30px 30px 30px 30px;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+#filtres i
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #DEEBFF;
+    border-radius: 30px 30px 30px 30px;
+    color: rgb(0, 101, 252);
+    overflow: visible;
+    position: relative;
+    left: -17px;
+}
+
+#filtres div
+{
+    margin-right: 10px;
+}
+
+#info
+{
+    display: flex;
+    align-items: center;
+}
+
+#info i
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(242, 242, 242);
+    border-radius: 30px 30px 30px 30px; 
+    color: rgb(0, 101, 252);
+    height: 25px;
+    width: 25px;
+    
+    margin-right: 15px;
+    
+}
+                       /* Card les hébergements*/
+#hebergements
+{
+    background-color: rgb(242, 242, 242);
+    border-radius: 20px 20px 20px 20px;
+    width: 880px;
+    padding: 20px 20px 20px 20px;
+    
+    
+}    
+#cardHebergements
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+    
+}
+.cardHebergement
+{
+        width: 248px;
+        height: 200px; 
+        
+        background-color: white; 
+        padding: 5px 5px 5px 5px;
+        border-radius: 20px 20px 20px 20px;
+        margin-bottom: 25px;
+        box-shadow: 0px 5px 20px #999;
+        
+}
+.imageCardHebergements
+{
+    height: 110px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px 20px 0px 0px;
+}
+.imageCardHebergements img
+{
+    height: 110px;
+    width: 240px;
+    object-fit: cover;
+}
+.descriptionsHebergement
+{
+    padding-left: 10px;
+    font-size: 15px;
+    
+    
+}
+.fontStyle
+{
+    font-weight:normal;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+  
+}
+               /* étoiles */
+.starsHebergement
+{
+    display: flex;
+    font-size: 13px;
+    
+}
+.blue
+{
+    color: rgb(0, 101, 252);
+}
+.grey
+{
+    color:rgb(242, 242, 242);
+}
+
+#cardHebergements a
+{
+    text-decoration: none;
+    color: black;
+}
+
+#hebergements a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 17px;
+}
+.cardHebergement:hover
+{
+    background-color: rgb(242, 242, 242);
+}
+.afficherPlus
+{
+    padding-left: 20px;
+}
+
+                        /* Card les plus populaires*/
+
+#populaires
+{
+    background-color: rgb(242, 242, 242);
+    width: 422px;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+#cardPopulaires
+{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+
+}
+.cardPopulaire
+{
+        width: 350px;
+        height: 140px; 
+       
+        background-color: white; 
+        padding: 5px 5px 5px 5px;
+        border-radius: 20px 20px 20px 20px;
+        margin-bottom: 35px;
+        box-shadow: 0px 5px 20px #999;     
+}
+.imageCardPopulaire
+{
+    
+    
+    
+    
+}
+.imageCardPopulaire img
+{
+    width: 120px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+}
+.descriptionsPopulaire
+{
+    
+    width: 180px;
+    position: relative;
+    left: 140px;
+    top: -140px;
+    font-size: 15px;
+    font-weight: 700;
+    
+}
+
+.cardPopulaire a
+{
+    text-decoration: none;
+    color: black;
+}
+
+#cardPopulaires :hover
+{
+    background-color: rgb(242, 242, 242);
+    border-radius: 20px 20px 20px 20px;
+}
+    .stars
+{
+
+    display: flex;
+    font-size: 13px;
+    margin-top: 50px;
+}
+
+
+.starsM
+{
+  
+    display: flex;
+    font-size: 13px;
+    margin-top: 35px;
+}
+.fontStyleP
+{
+    font-size: 14px;
+    font-weight: normal;
+    
+}
+
+h2 
+{
+    margin-left: 20px;
+    font-size: 20px;
+}
+h3
+{
+    margin-left: 40px;
+    font-size: 20px;
+    
+}
+h3 i
+{
+  
+    width: 20px;
+    padding-left: 140px;
+    color: black;   
+}
+
+#deuxCard
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+                    /* Activités */
+
+#activites
+{
+    width: 1380px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+h4
+{
+    font-size: 20px;
+    padding-top: 40px;
+    padding-bottom: 2px;
+    margin-bottom: 0%;
+}
+.act1
+{
+    font-size: 15px;
+    width: 310px;
+    height: 444px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 5px 20px rgb(242, 242, 242);
+    
+}
+.act1 img
+{
+    width: 310px;
+    height: 384px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.act1 p
+{
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+.act2
+{
+    width: 310px;
+    height: 235px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 5px 20px rgb(242, 242, 242); 
+}
+.act2 img
+{
+    width: 310px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.act2 p
+{
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+.act3
+{
+    width: 310px;
+    height: 165px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 5px 20px rgb(242, 242, 242); 
+}
+.act3 img
+{
+    width: 310px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.act3 p
+{
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+.act4
+{
+    width: 310px;
+    height: 444px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 5px 20px rgb(242, 242, 242); 
+}
+.act4 img
+{
+    width: 310px;
+    height: 384px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.act4 p
+{
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+.act5
+{
+    width: 310px;
+    height: 200px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 5px 20px rgb(242, 242, 242); 
+}
+.act5 img
+{
+    width: 310px;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.act5 p
+{
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+.act6
+{
+    width: 310px;
+    height: 190px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 5px 20px rgb(242, 242, 242); 
+}
+.act6 img
+{
+    width: 310px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.act6 p
+{
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+#activites a
+{
+    text-decoration: none;
+    color: black;
+}
+
+#activites :hover
+{
+    background-color: rgb(242, 242, 242);
+}
+
+                                /* footer */
+
+footer
+{
+    background-color: rgb(242, 242, 242);
+    display: flex;
+   
+    height: 200px;
+    font-size: 17px;
+    padding-left: 49px;
+    
+    margin-top: 30px;
+   
+    
+}
+footer ul
+{
+    padding-left:0px;
+    font-weight: 700;
+    padding-top: 30px;
+    
+    
+}
+footer li
+{
+    
+    list-style: none;
+    padding-bottom: 10px;
+    padding-right: 270px;
+    font-weight: 300;
+    font-size: 17px;
+}
+footer p
+    {
+        font-weight: 700;
+        font-size: 17px;
+        
+    }
+/* Tablettes*/
+@media screen and (min-width: 780px) and (max-width: 992px)
+{
+    #filtres
+    {
+        flex-wrap: wrap;
+        
+    }
+    .animaux
+    {
+        margin-left: 300px;
+    }
+    #deuxCard
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #hebergements
+    {
+        width: 100%;
+    }
+    #populaires
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .cardPopulaire
+    {
+        width: 670px;
+    }
+    .descriptionsPopulaire
+    {
+        width: 700px;
+        text-align: center;
+        
+    }
+    .cardPopulaire img
+    {
+        width: 300px
+    }    
+    .descriptionsPopulaire .stars
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .descriptionsPopulaire .starsM
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    h3 i
+    {
+        margin-left: 270px;
+    }   
+    
+    h4
+    {
+        margin-top: 0px;
+        padding-top: 25px;
+        margin-left: 25px;
+        padding-bottom: 10px;
+    }
+    #activites 
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 300px;
+       
+    }
+
+    #activites img
+    {
+        width: 702px;
+        height: 110px;
+    }
+   .act1, .act2, .act3, .act4, .act5, .act6
+    {
+        width: 702px;
+        margin-right: 25px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        
+    }
+    footer
+    {
+        margin-top: 300px;
+        height: 100%;
+    }
+    footer li
+    {
+        padding-right: 70px;
+    }
 }
 
                     /* Pour les portables*/
@@ -253,7 +723,6 @@ color: rgb(0, 101, 252);
         border-bottom: 3px solid rgb(242, 242, 242);
     }
    
-   
    nav a:hover 
    {
         border-top: none;
@@ -262,6 +731,7 @@ color: rgb(0, 101, 252);
 
     }
                     /* Barre de recherche */
+                    
     #blocPage
     {
         margin-left: 25px;
@@ -282,13 +752,158 @@ color: rgb(0, 101, 252);
         align-items: center;
         justify-content: center;
         background-color: rgb(0, 101, 252);
+        border: 1px solid rgb(0, 101, 252);
         border-radius: 20px 20px 20px 20px;
         width: 50px;
+        height: 50px;
         position: relative;
         left: -14px;
     }
+
     #boutonLoupe i
     {
         color: white;
     }
+
+                        /* Filtres */
+    
+    #filtres
+    {
+        flex-wrap: wrap;
+        font-size: 15px;
+        margin-top:  0px;
+        
+    }
+
+    #filtres p
+    {
+        padding-left: 7px;
+        padding-right: 14px;
+        margin-left: 0px;
+        margin-right: 20px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    #filtres div
+    {
+        margin-right: 150px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    #filtres i
+    {
+        position: relative;
+        left: -9px;
+    }
+
+    #info
+    {
+        margin-top: 20px;
+    }
+    #deuxCard
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #blocPage #cardpopulaires
+    {
+        margin-left: 0px;
+    }
+    #populaires
+    {
+        margin-left: -25px;
+        width: 390px;
+        border-radius: 0px;
+    }
+    
+    #cardPopulaires
+    {
+       
+        
+
+        
+        
+    }
+    .cardPopulaire
+    {
+      
+    }
+    h3 i
+    {
+        padding-left: 120px;
+    }
+
+    #hebergements
+    {
+      
+        background-color: white;
+        width: 360px;
+        padding-left: 0px;
+        padding-right: 0px;
+        
+
+       
+    }
+    .cardHebergement
+    {
+       width: 100%;
+       margin-left: 0px;
+       margin-right: 20px;
+       
+       
+    }
+    .cardHebergement img
+    {
+        width: 100%;
+    }
+    h4
+    {
+        margin-top: 0px;
+        padding-top: 25px;
+        margin-left: 25px;
+        padding-bottom: 10px;
+    }
+    #activites 
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 300px;
+    }
+
+    #activites img
+    {
+        width: 340px;
+        height: 110px;
+    }
+   .act1, .act2, .act3, .act4, .act5, .act6
+    {
+        width: 340px;
+        margin-right: 25px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        background-color:rgb(242, 242, 242);
+        margin-top: 300px;
+        height: auto;
+        width: 414px;
+    }
+    footer ul
+    {
+        padding-top: 0px;
+    }
+    footer li
+    {
+        list-style: none;
+        padding-right: 0px;
+        
+    }
+    
 }
