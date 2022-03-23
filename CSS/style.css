@@ -178,6 +178,24 @@ nav a
     align-items: center;
 }
 
+.economique:hover
+{
+    background-color: #DEEBFF;
+}
+
+.familial:hover
+{
+    background-color: #DEEBFF;
+}
+.romantique:hover
+{
+    background-color: #DEEBFF;
+}
+.animaux:hover
+{
+    background-color: #DEEBFF;
+}
+
 #info i
 {
     display: flex;
