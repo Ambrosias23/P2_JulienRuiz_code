@@ -21,7 +21,7 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 65px;    
+    margin-left: 55px;    
 }
 
 #logoBooki img
@@ -46,6 +46,7 @@ nav a
     padding-bottom: 46px;
     text-decoration: none;
     color: black;
+    border-top: 3px solid #fff;
 }
 
  nav a:hover 
@@ -64,15 +65,17 @@ nav a
 
  #blocPage
 {
-    margin-left: 49px;
-    margin-right: 49px;
+    margin-left: 45px;
+    margin-right: 45px;
 }
 
 #barreDeRecherche
-{   width: 700px;
+{   
+    width: 700px;
     height: 50px;
     display: flex;
     flex-direction: row;
+    margin-bottom: 30px;
 }
 
 #iconePosition
@@ -97,103 +100,95 @@ nav a
     width: 240px;
     border:1px solid rgb(242, 242, 242);
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     color: black;
+    padding-left: 20px;
 }
 
-#champDeRecherche::placeholder
+.search-button
 {
-    color: black;
-}
-
-#boutonRechercher 
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 600;
+    background-color: rgb(0, 101, 252);
+    border: 1px solid rgb(0, 101, 252);
     height: 50px;
     width: 133px;
-    background-color: rgb(0, 101, 252);
-    color: white;
     border-radius: 0% 15px 15px 0%;
     font-size: 18px;
-    border: 1px solid rgb(0, 101, 252);
-    position: relative;
-    left: -4px; 
+    font-weight: 600;
+    color: white;
 }
 
-#boutonLoupe
+.search-button i
 {
     display: none;
 }
 
                     /* Filtres */
+
 #filtres
 {
     display: flex;
     align-items: center;
-    
-    font-size: 18px;
-    font-weight: 700;
+    justify-content: space-around;
+    font-size: 17px;
+    font-weight: 500;
     margin-top: 13px;
+    width: 70%;
+    flex-wrap: wrap;
 }
 
-#filtres p
+.filtre
 {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-    margin-right: 10px;
-    border: 2px solid rgb(242, 242, 242);
+    border: 2px solid #F2F2F2;
     border-radius: 30px 30px 30px 30px;
-    padding-left: 15px;
-    padding-right: 20px;
-}
-
-#filtres i
-{
+    height: 51px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    padding-right: 15px;
+    margin-top: 10px;
+}
+
+.filtre i
+{
+    
+    border-radius: 30px 30px 30px 30px ;
+    height: 49px;
+    width: 49px;
+    display: flex;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    background-color: #DEEBFF;
-    border-radius: 30px 30px 30px 30px;
+    align-items: center;
     color: rgb(0, 101, 252);
-    overflow: visible;
+    background-color: #DEEBFF;
     position: relative;
-    left: -17px;
+    left: -10px;
 }
 
 #filtres div
 {
-    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 8px;
 }
+
+#filtres div:hover
+{
+    background-color: #DEEBFF;
+    cursor: pointer; 
+}
+
+ .filtre i:hover
+ {
+   color: white ; 
+ }
 
 #info
 {
     display: flex;
     align-items: center;
-}
-
-.economique:hover
-{
-    background-color: #DEEBFF;
-}
-
-.familial:hover
-{
-    background-color: #DEEBFF;
-}
-.romantique:hover
-{
-    background-color: #DEEBFF;
-}
-.animaux:hover
-{
-    background-color: #DEEBFF;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 #info i
@@ -206,18 +201,19 @@ nav a
     color: rgb(0, 101, 252);
     height: 25px;
     width: 25px;
-    
     margin-right: 15px;
 }
 
                        /* Card des hébergements */
 
+                       
 #hebergements
 {
     background-color: rgb(242, 242, 242);
     border-radius: 20px 20px 20px 20px;
-    width: 880px;
-    padding: 20px 20px 20px 20px;
+    width: 65%;
+    padding: 0px 20px 20px 20px;
+    margin-right: 10px;
 }   
 
 #cardHebergements
@@ -229,19 +225,18 @@ nav a
 
 .cardHebergement
 {
-        width: 248px;
-        height: 200px; 
-        background-color: white; 
-        padding: 5px 5px 5px 5px;
-        border-radius: 20px 20px 20px 20px;
-        margin-bottom: 25px;
-        box-shadow: 0px 5px 20px #999;
+    width: 30%;
+    height: 199px; 
+    background-color: white; 
+    padding: 5px 5px 5px 5px;
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 25px;
+    box-shadow: 0px 5px 20px #999;  
 }
 
 .imageCardHebergements
 {
     height: 110px;
-    position: relative;
     overflow: hidden;
     border-radius: 20px 20px 0px 0px;
 }
@@ -256,14 +251,14 @@ nav a
 .descriptionsHebergement
 {
     padding-left: 10px;
-    font-size: 15px; 
+    font-size: 13px; 
 }
 
 .fontStyle
 {
     font-weight:normal;
     font-size: 14px;
-    margin-top: -10px;
+    margin-top: 0px;
     margin-bottom: 5px;
 }
 
@@ -272,7 +267,7 @@ nav a
 .starsHebergement
 {
     display: flex;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .blue
@@ -299,11 +294,6 @@ nav a
     font-size: 17px;
 }
 
-.cardHebergement:hover
-{
-    background-color: rgb(242, 242, 242);
-}
-
 .afficherPlus
 {
     padding-left: 20px;
@@ -314,110 +304,110 @@ nav a
 #populaires
 {
     background-color: rgb(242, 242, 242);
-    width: 422px;
+    width: 32%;
     border-radius: 20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
+    padding: 0px 20px 20px 20px;
 }
 
 #cardPopulaires
 {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
+    display: flex;
+    flex-direction: column;
 }
 
 .cardPopulaire
 {
-    width: 350px;
-    height: 140px;    
+    display: flex;
+    justify-content: center;
+}
+
+.cardPopulaire a
+{
+    width: 91%;
+    height: 145px;    
     background-color: white; 
-    padding: 5px 5px 5px 5px;
+    padding: 5px 21px 5px 5px;
     border-radius: 20px 20px 20px 20px;
     margin-bottom: 35px;
-    box-shadow: 0px 5px 20px #999;     
+    box-shadow: 0px 5px 20px #999;
+    display: flex;
+    margin-right: 0px;
+    padding-right: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+.imageCardPopulaire 
+{
+    border-radius: 20px 0px 0px 20px;
 }
 
 .imageCardPopulaire img
 {
     width: 120px;
-    height: 130px;
+    height: 135px;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
 }
 
 .descriptionsPopulaire
-{
-    width: 180px;
-    position: relative;
-    left: 140px;
-    top: -140px;
-    font-size: 15px;
-    font-weight: 700;   
-}
-
-.cardPopulaire a
-{
-    text-decoration: none;
-    color: black;
-}
-
-#cardPopulaires :hover
-{
-    background-color: rgb(242, 242, 242);
-    border-radius: 20px 20px 20px 20px;
+{ 
+    font-size: 13px;  
+    margin-left: 15px;
+    padding-right: 39px;
+    border-radius: 0px 20px 20px 0px;
 }
 
 .stars
 {
+    height: 30px;
     display: flex;
-    font-size: 13px;
-    margin-top: 50px;
-}
-
-.starsM
-{
-    display: flex;
-    font-size: 13px;
-    margin-top: 35px;
+    align-items:flex-end;
+    font-size: 11px;
 }
 
 .fontStyleP
 {
     font-size: 14px;
     font-weight: normal;
+    margin-top: 8px;
 }
 
 h2 
 {
+    display: flex;
+    justify-content: space-between;
     margin-left: 20px;
-    font-size: 20px;
+    margin-right: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 40px;
+    padding-bottom: 10px;
 }
 
 h3
 {
-    margin-left: 40px;
-    font-size: 20px;
-}
-
-h3 i
-{
-    width: 20px;
-    padding-left: 140px;
-    color: black;   
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 #deuxCard
 {
     display: flex;
     justify-content: space-between;
+    flex-grow: 2;
 }
 
                     /* Activités */
 
 #activites
 {
-    width: 1380px;
+    width: 103%;
     height: 500px;
     display: flex;
     justify-content: space-around;
@@ -425,26 +415,33 @@ h3 i
     flex-wrap: wrap;
 }
 
+#ancrageActivites
+{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: 60px;
+    margin-left: 0px;
+}
+
 h4
 {
-    font-size: 20px;
-    padding-top: 40px;
-    padding-bottom: 2px;
-    margin-bottom: 0%;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 20px;
 }
 
 .act1
 {
     font-size: 15px;
-    width: 310px;
+    width: 300px;
     height: 444px;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 5px 20px rgb(242, 242, 242); 
+    box-shadow: 0px 5px 20px rgb(242, 242, 242);
 }
 
 .act1 img
 {
-    width: 310px;
+    width: 300px;
     height: 384px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -459,7 +456,7 @@ h4
 
 .act2
 {
-    width: 310px;
+    width: 300px;
     height: 235px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0px 5px 20px rgb(242, 242, 242); 
@@ -467,7 +464,7 @@ h4
 
 .act2 img
 {
-    width: 310px;
+    width: 300px;
     height: 180px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -482,7 +479,7 @@ h4
 
 .act3
 {
-    width: 310px;
+    width: 300px;
     height: 165px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0px 5px 20px rgb(242, 242, 242); 
@@ -490,7 +487,7 @@ h4
 
 .act3 img
 {
-    width: 310px;
+    width: 300px;
     height: 100px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -505,7 +502,7 @@ h4
 
 .act4
 {
-    width: 310px;
+    width: 300px;
     height: 444px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0px 5px 20px rgb(242, 242, 242); 
@@ -513,7 +510,7 @@ h4
 
 .act4 img
 {
-    width: 310px;
+    width: 300px;
     height: 384px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -528,7 +525,7 @@ h4
 
 .act5
 {
-    width: 310px;
+    width: 300px;
     height: 200px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0px 5px 20px rgb(242, 242, 242); 
@@ -536,7 +533,7 @@ h4
 
 .act5 img
 {
-    width: 310px;
+    width: 300px;
     height: 145px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -551,7 +548,7 @@ h4
 
 .act6
 {
-    width: 310px;
+    width: 300px;
     height: 190px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0px 5px 20px rgb(242, 242, 242); 
@@ -559,7 +556,7 @@ h4
 
 .act6 img
 {
-    width: 310px;
+    width: 300px;
     height: 130px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -578,66 +575,66 @@ h4
     color: black;
 }
 
-#activites :hover
-{
-    background-color: rgb(242, 242, 242);
-}
-
                                 /* footer */
 
 footer
 {
     background-color: rgb(242, 242, 242);
     display: flex;
-    height: 200px;
-    font-size: 17px;
-    padding-left: 49px;
-    margin-top: 30px;
+    width: 100%;
+    height: 220px;
+    margin-top: 40px;
+    padding-left: 50px;
+    padding-top: 40px;
+}
+
+footer div
+{
+    font-size: 19px;
+    font-weight: 600;
 }
 
 footer ul
 {
     padding-left:0px;
     font-weight: 700;
-    padding-top: 30px;
+    padding-top: 15px;
+    margin-top: 0px;
+    padding-right: 50px;
 }
 
 footer li
 {
     list-style: none;
-    padding-bottom: 10px;
-    padding-right: 270px;
+    padding-bottom: 15px;
+    padding-right: 200px;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 16px;
 }
 
-footer p
+footer li a
 {
-    font-weight: 700;
-    font-size: 17px;  
+    text-decoration: none;
+    color: black;
 }
 
                     /* Tablettes*/
 
 
-@media screen and (min-width: 780px) and (max-width: 992px)
+@media screen and (min-width: 768px) and (max-width: 991px)
 {
                     /* Filtres*/
 
     #filtres
-    {
+    {  
         flex-wrap: wrap;
-    }
-
-    .animaux
-    {
-        margin-left: 300px;
     }
 
     #deuxCard
     {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
                    /* Hebergements */
@@ -647,23 +644,27 @@ footer p
         width: 100%;
     }
 
+                    /* Populaire */
+
     #populaires
     {
         width: 100%;
         margin-top: 20px;
     }
-
-                    /* Populaire */
-
-    .cardPopulaire
+    
+    .cardPopulaires
     {
-        width: 670px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .descriptionsPopulaire
     {
-        width: 700px;
+        width: 630px;
         text-align: center;
+        border-radius: 0px 20px 20px 0px;
     }
 
     .cardPopulaire img
@@ -671,26 +672,12 @@ footer p
         width: 300px
     }    
 
-    .descriptionsPopulaire .stars
+   .cardPopulaire .stars
     {
         display: flex;
         justify-content: center;
-        align-items: center;
     }
-
-    .descriptionsPopulaire .starsM
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px;
-    }
-
-    h3 i
-    {
-        margin-left: 270px;
-    }   
-    
+   
     h4
     {
         margin-top: 0px;
@@ -706,7 +693,7 @@ footer p
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        margin-top: 300px;
+        margin-top: 400px;
     }
 
     #activites img
@@ -721,14 +708,13 @@ footer p
         margin-right: 25px;
         margin-left: 0px;
         margin-bottom: 20px;
-        
     }
 
                         /* Footer */
 
     footer
     {
-        margin-top: 300px;
+        margin-top: 400px;
         height: 100%;
     }
 
@@ -739,11 +725,9 @@ footer p
 }
 
                         /* Pour les portables*/
-
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 767px) 
 {
                         /* Header */
-   
     header
     {
        display: flex;
@@ -753,7 +737,9 @@ footer p
     
     #logoBooki
     {
-        margin-left: 7%;
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
     }
    
     nav
@@ -776,7 +762,6 @@ footer p
         border-top: none;
         border-bottom: 3px solid rgb(0, 101, 252);
         color: rgb(0, 101, 252);
-
     }
                     
                         /* Barre de recherche */
@@ -787,14 +772,8 @@ footer p
         margin-right: 25px;
     }
     
-    #boutonRechercher 
+    .search-button
     {
-        display: none;  
-    }
-    
-    #boutonLoupe
-    {
-        display: inline-flex;
         align-items: center;
         justify-content: center;
         background-color: rgb(0, 101, 252);
@@ -806,48 +785,44 @@ footer p
         left: -14px;
     }
 
-    #boutonLoupe i
+    .search-button span
     {
-        color: white;
+        display: none;
+    }
+    .search-button i 
+    {
+        display: block;
     }
 
                         /* Filtres */
     
-    #filtres
-    {
-        flex-wrap: wrap;
-        font-size: 15px;
-        margin-top:  0px;
-    }
-
     #filtres p
     {
-        padding-left: 7px;
-        padding-right: 14px;
-        margin-left: 0px;
-        margin-right: 20px;
-        margin-top: 0px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-right: 300px;
         margin-bottom: 10px;
+        margin-top: 10px;
     }
 
-    #filtres div
+    #filtres 
     {
-        margin-right: 150px;
-        margin-top: 25px;
-        margin-bottom: 15px;
+        width: 100%;
+        display: flex;
+        justify-content:flex-start;
     }
-
-    #filtres i
+    
+    #filtres .filtre
     {
-        position: relative;
-        left: -9px;
+        font-size: 16px;
+        margin-top:  10px;
+        margin-right: 10px;   
     }
-
-    #info
+    
+    #info i
     {
-        margin-top: 20px;
+        width: 25px;
     }
-
                             /* Populaires */
 
     #deuxCard
@@ -868,10 +843,6 @@ footer p
         border-radius: 0px;
     }
     
-    h3 i
-    {
-        padding-left: 120px;
-    }
 
                                     /* Hebergements */
 
@@ -905,12 +876,19 @@ footer p
 
                                     /* Activites */
 
+
+    #ancrageActivites
+    {
+        margin-top: 30px;
+    }
+
+
     #activites 
     {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        margin-top: 300px;
+        margin-top: 390px;
     }
 
     #activites img
@@ -922,7 +900,7 @@ footer p
    .act1, .act2, .act3, .act4, .act5, .act6
     {
         width: 340px;
-        margin-right: 25px;
+        margin-right: 0px;
         margin-left: 0px;
         margin-bottom: 20px;
     }
@@ -934,21 +912,22 @@ footer p
         display: flex;
         flex-direction: column;
         background-color:rgb(242, 242, 242);
-        margin-top: 300px;
+        margin-top:390px;
         height: auto;
-        width: 414px;
+        width: 100%;
     }
 
-    footer ul
-    {
-        padding-top: 0px;
-    }
-
+   
     footer li
     {
         list-style: none;
         padding-right: 0px;
-        
+        width: 100%;
+    }
+
+    footer div
+    {
+        margin-bottom: 20px;
     }
     
 }
