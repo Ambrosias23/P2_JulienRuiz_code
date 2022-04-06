@@ -128,12 +128,14 @@ nav a
 {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    
     font-size: 17px;
     font-weight: 500;
     margin-top: 13px;
-    width: 70%;
-    flex-wrap: wrap;
+    
+    width: 100%;
+    flex-wrap: nowrap;
+
 }
 
 .filtre
@@ -143,15 +145,17 @@ nav a
     height: 51px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    
     padding-right: 15px;
     margin-top: 10px;
+    margin-right: 20px;
+  
 }
 
 .filtre i
 {
     
-    border-radius: 30px 30px 30px 30px ;
+    border-radius: 50%;
     height: 49px;
     width: 49px;
     display: flex;
@@ -168,6 +172,17 @@ nav a
     font-size: 18px;
     font-weight: 700;
     margin-left: 8px;
+    
+}
+
+#filtres p
+{
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 20px;
+    margin-top: 12px;
+    margin-bottom: 2px;
+    text-align: center;
 }
 
 #filtres div:hover
@@ -176,10 +191,10 @@ nav a
     cursor: pointer; 
 }
 
- .filtre i:hover
- {
-   color: white ; 
- }
+#filtres div:hover i 
+{
+    color: white;
+}
 
 #info
 {
@@ -202,11 +217,29 @@ nav a
     height: 25px;
     width: 25px;
     margin-right: 15px;
+    font-size: 13px;
+    
 }
 
                        /* Card des hébergements */
 
-                       
+.card
+{
+    background-color: white; 
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 5px 20px rgb(168, 167, 167); 
+    padding: 5px 5px 5px 5px;
+}
+.fontStyle span
+{
+    font-weight: 700;
+}
+
+
+
+
+
+
 #hebergements
 {
     background-color: rgb(242, 242, 242);
@@ -227,11 +260,7 @@ nav a
 {
     width: 30%;
     height: 199px; 
-    background-color: white; 
-    padding: 5px 5px 5px 5px;
-    border-radius: 20px 20px 20px 20px;
     margin-bottom: 25px;
-    box-shadow: 0px 5px 20px #999;  
 }
 
 .imageCardHebergements
@@ -244,7 +273,7 @@ nav a
 .imageCardHebergements img
 {
     height: 110px;
-    width: 240px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -256,7 +285,7 @@ nav a
 
 .fontStyle
 {
-    font-weight:normal;
+    font-weight: normal;
     font-size: 14px;
     margin-top: 0px;
     margin-bottom: 5px;
@@ -308,33 +337,31 @@ nav a
     border-radius: 20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 30px 35px 30px;
+    
 }
 
 #cardPopulaires
 {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    
 }
 
 .cardPopulaire
 {
-    display: flex;
-    justify-content: center;
+    background-color: white; 
+    height: 29%;
+    width: 100%;
 }
 
 .cardPopulaire a
 {
-    width: 91%;
-    height: 145px;    
-    background-color: white; 
-    padding: 5px 21px 5px 5px;
-    border-radius: 20px 20px 20px 20px;
-    margin-bottom: 35px;
-    box-shadow: 0px 5px 20px #999;
+    height: 100%;
     display: flex;
-    margin-right: 0px;
-    padding-right: 0px;
+    border-radius: 20px 20px 20px 20px;
     text-decoration: none;
     color: black;
 }
@@ -342,21 +369,21 @@ nav a
 .imageCardPopulaire 
 {
     border-radius: 20px 0px 0px 20px;
+    width: 35%;
 }
 
 .imageCardPopulaire img
 {
-    width: 120px;
-    height: 135px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
 }
 
 .descriptionsPopulaire
 { 
-    font-size: 13px;  
-    margin-left: 15px;
-    padding-right: 39px;
+    width: 60%;
+    margin-left: 3%;
     border-radius: 0px 20px 20px 0px;
 }
 
@@ -364,7 +391,7 @@ nav a
 {
     height: 30px;
     display: flex;
-    align-items:flex-end;
+    align-items:center;
     font-size: 11px;
 }
 
@@ -373,6 +400,11 @@ nav a
     font-size: 14px;
     font-weight: normal;
     margin-top: 8px;
+}
+
+.fontStyleP span
+{
+    font-weight: 700;
 }
 
 h2 
@@ -395,7 +427,11 @@ h3
     font-size: 16px;
     font-weight: 600;
 }
-
+h2 a
+{
+    
+    color: black;
+}
 #deuxCard
 {
     display: flex;
@@ -407,7 +443,7 @@ h3
 
 #activites
 {
-    width: 103%;
+    width: 100%;
     height: 500px;
     display: flex;
     justify-content: space-around;
@@ -423,151 +459,92 @@ h3
     margin-left: 0px;
 }
 
-h4
+.cardActivite
 {
-    font-size: 16px;
-    font-weight: 600;
-    padding-left: 20px;
+    width: 22%;
+    padding: 0px 0px 0px 0px;
+    margin-right: 45px ;
 }
 
-.act1
+.cardActivite img
 {
-    font-size: 15px;
-    width: 300px;
-    height: 444px;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 5px 20px rgb(242, 242, 242);
-}
-
-.act1 img
-{
-    width: 300px;
-    height: 384px;
-    object-fit: cover;
+    width: 100%;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
-.act1 p
+.cardActivite h3
 {
     font-size: 15px;
     font-weight: 700;
     padding-left: 20px;
+    padding-top: 10px;
 }
 
-.act2
+.activite1
 {
-    width: 300px;
+    height: 444px;
+}
+
+.activite1 img
+{
+    height: 384px;
+}
+
+.activite2
+{
     height: 235px;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 5px 20px rgb(242, 242, 242); 
 }
 
-.act2 img
+.activite2 img
 {
-    width: 300px;
     height: 180px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
 }
 
-.act2 p
+.activite3
 {
-    font-size: 15px;
-    font-weight: 700;
-    padding-left: 20px;
-}
-
-.act3
-{
-    width: 300px;
     height: 165px;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 5px 20px rgb(242, 242, 242); 
 }
 
-.act3 img
+.activite3 img
 {
-    width: 300px;
     height: 100px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
 }
 
-.act3 p
+.activite4
 {
-    font-size: 15px;
-    font-weight: 700;
-    padding-left: 20px;
-}
-
-.act4
-{
-    width: 300px;
     height: 444px;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 5px 20px rgb(242, 242, 242); 
 }
 
-.act4 img
-{
-    width: 300px;
+.activite4 img
+{ 
     height: 384px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
 }
 
-.act4 p
-{
-    font-size: 15px;
-    font-weight: 700;
-    padding-left: 20px;
-}
 
-.act5
+.activite5
 {
-    width: 300px;
     height: 200px;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 5px 20px rgb(242, 242, 242); 
+    margin-right: 0px;
 }
 
-.act5 img
+.activite5 img
 {
-    width: 300px;
     height: 145px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
 }
 
-.act5 p
+.activite6
 {
-    font-size: 15px;
-    font-weight: 700;
-    padding-left: 20px;
-}
-
-.act6
-{
-    width: 300px;
     height: 190px;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 5px 20px rgb(242, 242, 242); 
+    margin-right: 0px;
 }
 
-.act6 img
+.activite6 img
 {
-    width: 300px;
     height: 130px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
 }
 
-.act6 p
-{
-    font-size: 15px;
-    font-weight: 700;
-    padding-left: 20px;
-}
+
 
 #activites a
 {
@@ -588,10 +565,11 @@ footer
     padding-top: 40px;
 }
 
-footer div
+footer > div
 {
     font-size: 19px;
     font-weight: 600;
+    width: 33%;
 }
 
 footer ul
@@ -600,14 +578,13 @@ footer ul
     font-weight: 700;
     padding-top: 15px;
     margin-top: 0px;
-    padding-right: 50px;
+    
 }
 
 footer li
 {
     list-style: none;
     padding-bottom: 15px;
-    padding-right: 200px;
     font-weight: 300;
     font-size: 16px;
 }
@@ -628,8 +605,14 @@ footer li a
     #filtres
     {  
         flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
     }
-
+    
+    .filtre
+    {
+        margin-right: 0px;
+    }
     #deuxCard
     {
         display: flex;
@@ -654,10 +637,16 @@ footer li a
     
     .cardPopulaires
     {
-        width: 90%;
+        width: 100%;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .cardPopulaire
+    {
+        height: 150px;
+        margin-bottom: 20px;
     }
 
     .descriptionsPopulaire
@@ -667,9 +656,13 @@ footer li a
         border-radius: 0px 20px 20px 0px;
     }
 
+    .imageCardPopulaire
+    {
+        width: 50%;
+    }
     .cardPopulaire img
     {
-        width: 300px
+        width: 100%;
     }    
 
    .cardPopulaire .stars
@@ -678,13 +671,7 @@ footer li a
         justify-content: center;
     }
    
-    h4
-    {
-        margin-top: 0px;
-        padding-top: 25px;
-        margin-left: 25px;
-        padding-bottom: 10px;
-    }
+    
 
                         /* Activites */
 
@@ -693,18 +680,20 @@ footer li a
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        margin-top: 400px;
+        margin-top: 420px;
     }
 
     #activites img
     {
-        width: 702px;
-        height: 110px;
+        width: 100%;
+        height: 150px;
     }
 
-   .act1, .act2, .act3, .act4, .act5, .act6
+    
+   .activite1, .activite2, .activite3, .activite4, .activite5, .activite6
     {
-        width: 702px;
+        width: 100%;
+        height: 450px;
         margin-right: 25px;
         margin-left: 0px;
         margin-bottom: 20px;
@@ -732,7 +721,7 @@ footer li a
     {
        display: flex;
        flex-direction: column;
-       justify-content:space-around;
+       justify-content: space-around;
     }
     
     #logoBooki
@@ -771,7 +760,10 @@ footer li a
         margin-left: 25px;
         margin-right: 25px;
     }
-    
+    #barreDeRecherche
+    {
+        width: 100%;
+    }
     .search-button
     {
         align-items: center;
@@ -800,28 +792,33 @@ footer li a
     {
         font-size: 16px;
         font-weight: 600;
-        margin-right: 300px;
+        margin-right: 150px;
         margin-bottom: 10px;
         margin-top: 10px;
+        display: flex;
+        
     }
 
     #filtres 
     {
         width: 100%;
         display: flex;
-        justify-content:flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
     }
     
     #filtres .filtre
     {
         font-size: 16px;
         margin-top:  10px;
-        margin-right: 10px;   
+        margin-right: 5px;   
     }
     
     #info i
     {
         width: 25px;
+        
     }
                             /* Populaires */
 
@@ -842,6 +839,12 @@ footer li a
         width: 390px;
         border-radius: 0px;
     }
+
+    .cardPopulaire 
+    {
+        height: 150px;
+        margin-top: 15px ;
+    }
     
 
                                     /* Hebergements */
@@ -850,6 +853,7 @@ footer li a
     {
         background-color: white;
         width: 360px;
+        height: 1500px;
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -866,14 +870,6 @@ footer li a
         width: 100%;
     }
 
-    h4
-    {
-        margin-top: 0px;
-        padding-top: 25px;
-        margin-left: 25px;
-        padding-bottom: 10px;
-    }
-
                                     /* Activites */
 
 
@@ -888,7 +884,13 @@ footer li a
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        margin-top: 390px;
+        margin-top: 180px;
+        height: 840px;
+    }
+    
+    #activites h3
+    {
+        padding-bottom: 10px;
     }
 
     #activites img
@@ -897,12 +899,12 @@ footer li a
         height: 110px;
     }
 
-   .act1, .act2, .act3, .act4, .act5, .act6
+   .activite1, .activite2, .activite3, .activite4, .activite5, .activite6
     {
         width: 340px;
         margin-right: 0px;
         margin-left: 0px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
                                     /* Footer */
@@ -912,7 +914,7 @@ footer li a
         display: flex;
         flex-direction: column;
         background-color:rgb(242, 242, 242);
-        margin-top:390px;
+        margin-top:180px;
         height: auto;
         width: 100%;
     }
@@ -929,5 +931,8 @@ footer li a
     {
         margin-bottom: 20px;
     }
-    
+    footer > div
+    {
+        width: 100%;
+    }  
 }
