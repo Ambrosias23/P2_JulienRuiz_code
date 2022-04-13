@@ -8,7 +8,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-        
         <script src="https://kit.fontawesome.com/53a83682ea.js" crossorigin="anonymous"></script>
         <title>Booki</title>
     </head>
@@ -27,7 +26,7 @@
 
     
         <main id="blocPage">
-            <section>
+            <section class="margin">
                 <div>
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
@@ -53,7 +52,7 @@
                     </div>  
                 </div>
             </section>
-            <div>
+            <div class="margin">
                 <div id="filtres">
                     <p>Filtres</p>
                     <div class="filtre" ><i class="fa-solid fa-money-bill-wave"></i>Economique</div>
@@ -68,16 +67,25 @@
 
             <div id="deuxCard">
                 <section id="hebergements">
-                    <h2>Hébergements à Marseille</h2>
-                    <div id="cardHebergements">
+                    <h2 >Hébergements à Marseille</h2>
+                    <div id="cardHebergements" class="margin">
                         <div class="card cardHebergement">
                             <a href="#">
                                 <div class="imageCardHebergements">
                                     <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière"
-                                    srcset="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1000w,
-                                            images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1868w, 
-                                            images/hebergements/1_xlarge/aubergeLaCannebière.jpg 3735w"
-                                            sizes="100vw"></div>
+                                            srcset=
+                                                "images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg 750w,
+                                                 images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1499w,
+                                                 images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 2997w"
+                                                
+                                         sizes="(max-width: 767px) 767px,
+                                                (min-width: 768px) and (max-width: 991px) 800px,
+                                                (min-width: 991px) 1000px,
+                                                100vw"
+                                         
+                                            
+                                    >
+                                </div>
                                 <div class="descriptionsHebergement">
                                     <h3>Auberge La Canebière</h3>
                                     <p class="fontStyle">Nuit à partir de <span> 25€</span></p>
@@ -94,9 +102,9 @@
                         <div class="card cardHebergement">
                             <a href="#">
                                 <div class="imageCardHebergements"><img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port"
-                                    srcset="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 912w,
-                                            images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg 1824w, 
-                                            images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg 3648w"
+                                    srcset="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg  684w ,
+                                            images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 1368w,
+                                            images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg 2736w"
                                             sizes="100vw"></div>
                                 <div class="descriptionsHebergement">
                                     <h3>Hôtel du port</h3>
@@ -114,9 +122,9 @@
                         <div class="card cardHebergement">
                             <a href="#">
                                 <div class="imageCardHebergements"><img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes"
-                                    srcset="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 1000w,
-                                            images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg 2000w, 
-                                            images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 4000w"
+                                    srcset="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg 750w,
+                                            images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 1500w,
+                                            images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg 3000w"
                                             sizes="100vw"></div>
                                 <div class="descriptionsHebergement">
                                     <h3>Hôtel Les mouettes</h3>
@@ -134,9 +142,9 @@
                         <div class="card cardHebergement">
                             <a href="#">
                                 <div class="imageCardHebergements"><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer"
-                                    srcset="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 934w,
-                                            images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg 1868w, 
-                                            images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg 3735w"
+                                    srcset="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg 500w,
+                                            images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 1000w,
+                                            images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg 2000w"
                                             sizes="100vw"></div>
                                 <div class="descriptionsHebergement">   
                                     <h3>Hôtel de la mer</h3>
@@ -154,9 +162,9 @@
                         <div class="card cardHebergement">
                             <a href="#">
                                 <div class="imageCardHebergements"><img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier"
-                                    srcset="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 733w,
-                                            images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 1466w, 
-                                            images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 2932w"
+                                    srcset="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 652w,
+                                            images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 1303w,
+                                            images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 2606w"
                                             sizes="100vw"></div>
                                 <div class="descriptionsHebergement">
                                     <h3>Auberge Le Panier</h3>
@@ -174,9 +182,9 @@
                         <div class="card cardHebergement">
                             <a href="#">
                                 <div class="imageCardHebergements"><img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina"
-                                    srcset="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 1458w,
-                                            images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 2916w, 
-                                            images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 5831w"
+                                    srcset="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 486w,
+                                            images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 972w,
+                                            images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 1944w"
                                             sizes="100vw"></div>
                                 <div class="descriptionsHebergement">
                                     <h3>Hôtel chez Amina</h3>
@@ -199,10 +207,10 @@
                     <div id="cardPopulaires">
                         <div class=" card cardPopulaire">
                             <a href="#">
-                                <div class="imageCardPopulaire"><img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin"
-                                    srcset="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 709w,
-                                            images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 1417w, 
-                                            images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 2833w"
+                                <div class="imageCardPopulaire"><img src="images/hebergements/4_small/" alt="Hôtel Le soleil du matin"
+                                    srcset="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 532w,
+                                            images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 1063w,
+                                            images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 2125w"
                                             sizes="100vw"></div>
                                 <div class="descriptionsPopulaire">
                                     <h3>Hôtel Le soleil du matin</h3>
@@ -219,10 +227,10 @@
                         </div>
                         <div class="card cardPopulaire">
                             <a href="#">
-                                <div class="imageCardPopulaire"><img src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes"
-                                    srcset="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 756w,
-                                            images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg 1512w, 
-                                            images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg 3024w"
+                                <div class="imageCardPopulaire"><img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes"
+                                    srcset="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg 378w,
+                                            images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 1008w,
+                                            images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg 2016w"
                                             sizes="100vw"></div>
                                 <div class="descriptionsPopulaire">
                                     <h3>Au coeur de l'eau Chambres d'hôtes</h3>
@@ -239,10 +247,10 @@
                         </div>
                         <div class="card cardPopulaire">
                             <a href="#">
-                                <div class="imageCardPopulaire"><img src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc"
-                                    srcset="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 1500w,
-                                            images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg 3000w, 
-                                            images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg 6000w"
+                                <div class="imageCardPopulaire"><img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc"
+                                    srcset="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg 500w,
+                                            images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 1000w,
+                                            images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg 2000w"
                                             sizes="100vw"></div>
                                 <div class="descriptionsPopulaire">
                                     <h3>Hôtel Tout bleu et Blanc</h3>
@@ -259,40 +267,42 @@
                         </div>
                     </div>
                 </aside>
-            </div> 
-            <h2 id="ancrageActivites">Activités à Marseille</h2>
-            <div id="activites">
-                <div  class="card cardActivite activite1">
-                    <a href="#"><img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"
-                        srcset="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 936w,
-                                images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 1872w, 
-                                images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 3744w" sizes="100vw"><h3>Vieux Port</h3></a></div>
-                <div class=" card cardActivite activite2">
-                    <a href="#"><img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomégues"
-                        srcset="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg 1068w,
-                                images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg 2136w, 
-                                images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg 4272w" sizes="100vw"><h3> Fort de Pomégues</h3></a></div>
-                <div class="card cardActivite activite3">
-                    <a href="#"><img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul"
-                        srcset="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 864w,
-                                images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 1728w, 
-                                images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 3456w" sizes="100vw"><h3>Îles du Frioul</h3></a></div>
-                <div class="card cardActivite activite4">
-                    <a href="#"><img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques"
-                        srcset="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 803w,
-                                images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 1605w, 
-                                images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 3210w" sizes="100vw"><h3>Parc National des Calanques</h3></a></div>
-                <div class="card cardActivite activite5">
-                    <a href="#"><img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-dame-de-la-garde"
-                        srcset="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 766w,
-                                images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg 1531w, 
-                                images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg 3062w" sizes="100vw"><h3>Notre-dame-de-la-garde</h3></a></div>
-                <div class="card cardActivite activite6">
-                    <a href="#"><img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"
-                        srcset="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg 756w,
-                                images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg 1512w, 
-                                images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg 3024w" sizes="100vw"><h3>Parc Longchamp</h3></a></div>
             </div>
+            <div class="margin">
+                <h2 id="ancrageActivites" >Activités à Marseille</h2>
+                <div id="activites">
+                    <div  class="card cardActivite activite1 ">
+                        <a href="#"><img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"
+                            srcset="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 702w,
+                                    images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 1404w,
+                                    images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 2808w" sizes="100vw"><h3>Vieux Port</h3></a></div>
+                    <div class=" card cardActivite activite2">
+                        <a href="#"><img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomégues"
+                            srcset="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg 356w,
+                                    images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg 711w,
+                                    images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg 1422w" sizes="100vw"><h3> Fort de Pomégues</h3></a></div>
+                    <div class="card cardActivite activite3">
+                        <a href="#"><img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul"
+                            srcset="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 648w,
+                                    images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 1296w,
+                                    images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 2592w" sizes="100vw"><h3>Îles du Frioul</h3></a></div>
+                <div class="card cardActivite activite4">
+                        <a href="#"><img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques"
+                            srcset="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 606w,
+                                    images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 1212w,
+                                    images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 2423w" sizes="100vw"><h3>Parc National des Calanques</h3></a></div>
+                <div class="card cardActivite activite5">
+                        <a href="#"><img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-dame-de-la-garde"
+                            srcset="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg 589w,
+                                    images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 1178w,
+                                    images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg 2356w" sizes="100vw"><h3>Notre-dame-de-la-garde</h3></a></div>
+                <div class="card cardActivite activite6">
+                        <a href="#"><img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"
+                            srcset="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg 504w,
+                                    images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg 1008w,
+                                    images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg 2016w" sizes="100vw"><h3>Parc Longchamp</h3></a></div>
+            </div>
+        </div> 
         </main>
         <footer>
             <div>
